@@ -8,4 +8,7 @@ memo for papers which I read.
 
 4/15
 
-- MARL survey
+- MARL survey(Not completed)
+
+5/5 
+- Kawaguchi et al. Effectiveness of Product Recommendations Under Time and Crowd Pressures(https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3212796)
