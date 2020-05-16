@@ -29,7 +29,7 @@
 クジ|期待値（1億フラン)| 期待効用
 :--:|:--:|:--:
 1|10|<img src="https://latex.codecogs.com/gif.latex?u(e&plus;10)"/>
-2|13.9|<img src="https://latex.codecogs.com/gif.latex?0.01&space;\times&space;u(0)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)&space;&plus;&space;0.89&space;\times&space;u(e&plus;10)"/>
+2|13.9|<img src="https://latex.codecogs.com/gif.latex?0.01&space;\times&space;u(e)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)&space;&plus;&space;0.89&space;\times&space;u(e&plus;10)"/>
 3|1.1|<img src="https://latex.codecogs.com/gif.latex?0.11&space;\times&space;u(e&plus;10)&space;&plus;&space;0.89&space;\times&space;u(e)" />
 4|5|<img src="https://latex.codecogs.com/gif.latex?0.10&space;\times&space;u(e&plus;50)&space;&plus;&space;0.9&space;\times&space;u(e)"/>
 
@@ -38,7 +38,7 @@
 
 実験結果では、クジ1,2を比べてどちらを引くかを被験者に聞くと多くの人がクジ1を選択し、クジ3,4を比べてどちらを引くかを被験者に聞くと多くの人がクジ4を選択するという。
 これを、期待効用に基づいて表してみると、
-<img src="https://latex.codecogs.com/gif.latex?u(e&space;&plus;&space;10)&space;>&space;0.01&space;\times&space;u(0)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)&space;&plus;&space;0.89&space;\times&space;u(e&plus;10)" />
+<img src="https://latex.codecogs.com/gif.latex?u(e&space;&plus;&space;10)&space;>&space;0.01&space;\times&space;u(e)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)&space;&plus;&space;0.89&space;\times&space;u(e&plus;10)" />
 と表せる。
 
 一方、２番目の実験結果は、
@@ -47,11 +47,11 @@
 
 ここで、一番最初の式の両辺から,<img src="https://latex.codecogs.com/gif.latex?0.89&space;\times&space;u(e&plus;10)"/>を引いてみると、
 
-<img src="https://latex.codecogs.com/gif.latex?u(e&space;&plus;&space;10)-&space;0.89&space;\times&space;u(e&plus;10)&space;>&space;0.01&space;\times&space;u(0)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)&space;&plus;&space;0.89&space;\times&space;u(e&plus;10)-&space;0.89&space;\times&space;u(e&plus;10)" />
+<img src="https://latex.codecogs.com/gif.latex?u(e&space;&plus;&space;10)-&space;0.89&space;\times&space;u(e&plus;10)&space;>&space;0.01&space;\times&space;u(e)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)&space;&plus;&space;0.89&space;\times&space;u(e&plus;10)-&space;0.89&space;\times&space;u(e&plus;10)" />
 
 となり、
 
-<img src="https://latex.codecogs.com/gif.latex?0.11&space;\times&space;u(e&space;&plus;&space;10)&space;>&space;0.01&space;\times&space;u(0)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)"/>
+<img src="https://latex.codecogs.com/gif.latex?0.11&space;\times&space;u(e&space;&plus;&space;10)&space;>&space;0.01&space;\times&space;u(e)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)"/>
 
 
 と、初期保有額e及び、効用関数uにかかわらず、２番目の実験結果と矛盾してしまう。
@@ -81,13 +81,22 @@
 
 
 アレの実験では、
+<!-- <font color="blue"></font> -->
+クジ２は、
 
+- 0.01の客観的確率で何にももらえないことにビビって、意思決定ウェイトを客観的確率よりも高く評価して、
+- 0.89の客観的確率でしか10億をもらえないことをビビって、意思決定ウェイトを客観的確率よりも低く評価している為、
+
+期待効用的には低い「クジ１」の方を選択してしまうのである。
+
+
+一方、クジ３、４に関しては、
 
 
 
 
 参考文献
-- 行動経済学
+- 大垣昌夫 (著), 田中沙織 (著)  「行動経済学（新版）」
 
 
 
