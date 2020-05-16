@@ -31,7 +31,7 @@
 1|10|<img src="https://latex.codecogs.com/gif.latex?u(e&plus;10)"/>
 2|13.9|<img src="https://latex.codecogs.com/gif.latex?0.01&space;\times&space;u(0)&space;&plus;&space;0.1&space;\times&space;u(e&plus;50)&space;&plus;&space;0.89&space;\times&space;u(e&plus;10)"/>
 3|1.1|<img src="https://latex.codecogs.com/gif.latex?0.11&space;\times&space;u(e&plus;10)&space;&plus;&space;0.89&space;\times&space;u(e)" />
-4|0.5|<img src="https://latex.codecogs.com/gif.latex?0.10&space;\times&space;u(e&plus;50)&space;&plus;&space;0.9&space;\times&space;u(e)"/>
+4|5|<img src="https://latex.codecogs.com/gif.latex?0.10&space;\times&space;u(e&plus;50)&space;&plus;&space;0.9&space;\times&space;u(e)"/>
 
 
 
@@ -79,6 +79,8 @@
 
 <img src="./img/weighted_prob.png"/>
 
+
+アレの実験では、
 
 
 
