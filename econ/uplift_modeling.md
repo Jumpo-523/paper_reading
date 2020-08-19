@@ -31,3 +31,73 @@ W（英語教育）と、
 W（英語教育）が実施されている地域は、そもそも
 
 
+
+
+
+
+CATE（Conditional Averaged Treatment Effect）
+---
+
+- Uplift modeling boils down to modeling P(Z_i = 1 | X_i).
+
+p^{hat}(x) is consistent estimator of the PS p(X_i).
+
+- Jaskowski and Jaroszewicz(2012)
+    - 
+- Athey and Imbens(2015)
+    - transformed outcome variable.
+
+
+CIAが付いて回る。
+
+
+$P(Y=1|X_1,..., X_m, G=\bold{T}) - P(Y=1|X_1,..., X_m, G= \bold{C} )$
+
+- 施策を打った(in the Treatment Group)ことにより、どれだけ「成功」(Y=1)につながったか？
+- treatment とcontrol群の成功確率の差をUpliftと呼ぶ。
+
+
+$\tau(X_i) = 2 P(Z_i=1|X_i) - 1$
+
+-　このセッティングでは、目的変数が二値変数で(分類問題である為)control／treatment群が調整されたケースにしか適応できない。
+
+不均衡な二群に対してかつ、回帰法を利用した手法がAthey and Imbens(2015)nide
+開発されている。
+
+<font size=5>
+
+$Y^*_i = Y_i(1)\frac{W_i}{\hat{p}(X_i)} - Y_i(0)\frac{1 - W_i}{1- \hat{p}(X_i)}$
+
+</font>
+
+上記式のように変形すると、CIAの元で、$E[Y^*_i|X_i] = \tau(X_i)$となることが証明されている。
+つまり、「$E[Y^*_i|X_i]$の一致推定量はCATEの一致推定量である」ということが言える。
+
+
+
+どういう使われ方をされているのか？
+>　複数の広告をみた際の効果推定
+- https://cyberagent.ai/blog/research/economics/12482/
+
+
+
+
+<!-- ここで証明を確認 -->
+
+- 評価
+
+Z-scoreが同じ人々は同じような行動をするという仮定をする（cf:傾向スコア法の推定時の仮定）
+
+uplift curveの見方。
+
+
+Reference
+----
+
+- Jskwski, Macuej and Szymon Jaroszewicz. uplift modeling for clinical trial data.
+
+
+<!-- スーパーの需要予測値引き 
+時間帯制御しないで、価格（割引き後）と売り上げの関係をみて、「安くすると利益上がる」と推定したとします。
+しかし、スーパーの割引きは大体閉店間近で、きている客層が違うことが予想されるため、四時台に価格を下げることが必ずしも利益をあげるとは限らない。
+-->
